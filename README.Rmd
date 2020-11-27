@@ -1,43 +1,35 @@
----
-output:
-  md_document:
-    variant: markdown_github
----
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "README-"
-)
-```
-
-<!-- Add a project state badge
-See https://github.com/BCDevExchange/Our-Project-Docs/blob/master/discussion/projectstates.md
-If you have bcgovr installed and you use RStudio, click the 'Insert BCDevex Badge' Addin. -->
 
 # Wetland_Summary
+This repository generates figures for Skeena East ESI wetland state of the value executive summary. 
 
 ### Usage
 
-Describe data being used (links), and how to run. Eg:
+There are a series core scripts that are required for the analysis, they can be sourced from the Run_ESI.R script, the scripts run include:
 
-There are four core scripts that are required for the analysis, they need to be run in order:
-
-- 01_clean.R
-- 02_analysis.R
-- 03_visualize.R
+- 01_load.R
+- Wet_02_clean.R
+- Wshd_02_clean.R
+- 03_analysis_barchars.R
+- 03_analysis_BoxPlots.R
+- 03_analysis_boxplotsWshd.R
+- 03_analysis_boxplotsWet.R
+- 03_analysis_BoxWet.R
+- 03_analysis_BoxWshd.R
 - 04_output.R
 
-#### Example
+### Data
 
-This is a basic example which shows you how to solve a common problem:
-
-```{r example}
-## basic example code
-```
+Data on wetlands was collated by Jesse Fraser using provincial and
+regional inventory. Skeena-Stikine FLNRORD District office supplied an
+updated roads layer - available upon request.
 
 ### Project Status
+
+This project is part of Skeena East ESI a collaboration of Skeena First
+Nations and the Provincial Government.
+
 
 ### Getting Help or Reporting an Issue
 
@@ -67,3 +59,7 @@ See the License for the specific language governing permissions and limitations 
 
 ---
 *This project was created using the [bcgovr](https://github.com/bcgov/bcgovr) package.* 
+
+This repository is maintained by
+[ENVEcosystems](https://github.com/orgs/bcgov/teams/envecosystems/members).
+
